@@ -1,0 +1,51 @@
+{
+  "site": {
+    "title": "ProvisionEdge",
+    "base_url": "https://provisionedge.com",
+    "base_path": "/",
+    "trailing_slash": false,
+    "favicon": "/images/favicon.ico",
+    "logo": "",
+    "logo_width": "47",
+    "logo_height": "47",
+    "logo_text": "ProvisionEdge"
+  },
+
+  "params": {
+    "footer_description": "Building local-first, decentralized systems that ensure operational continuity, data integrity, and digital autonomy.",
+    "email": "akora@provisionedge.com",
+    "location": "",
+    "phone": "",
+    "contact_form_action": "#",
+    "copyright": "Copyright © 2026 ProvisionEdge"
+  },
+
+  "metadata": {
+    "meta_author": "ProvisionEdge",
+    "meta_image": "/images/The-Local-First-Revolution-Data-with-a-Pulse_3e254a73-966e-4bbe-b787-8b8b948842c9.png",
+    "meta_description": "ProvisionEdge is a sovereign infrastructure consultancy building local-first, decentralized systems for operational continuity, data integrity, and digital autonomy.",
+    "meta_keywords": [
+      "DigitalSovereignty",
+      "DigitalAutonomy",
+      "OpenStandards",
+      "CustomBuilt",
+      "DigitalFortress",
+      "EdgeIoTSecurity",
+      "SecurePrivateFirstProducts",
+      "MoveAwayFromBlackBox",
+      "MigrationToLocalFirst",
+      "HardwareSoftwareStack",
+      "OpenCoreOpenSource",
+      "DecentralizedTech",
+      "SovereignNode",
+      "MovingTowardTheEdge",
+      "DigitalVault",
+      "ResilienceAgainstCentralizedFailure",
+      "LocalFirstDecentralizedSystems",
+      "ReproducibleDigitalEnvironment",
+      "AutonomyAudit",
+      "LocalFirst"
+    ],
+    "meta_application_name": "ProvisionEdge"
+  }
+}

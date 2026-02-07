@@ -1,0 +1,60 @@
+
+@use "sass:map";
+@use "sass:color";
+
+@function to_rgba($color, $alpha: 1) {
+    @return "" + color.channel($color, "red") + "," + color.channel($color, "green") + "," + color.channel($color, "blue");
+}
+
+// @see @/config/theme.json
+$default: (
+    "primary": #1f4b99,
+    "secondary": #3a7bd5,
+    "accent": #f97316,
+    "background": #f5f7fb,
+    "background-contrast": #0b1020,
+    "surface": #ffffff,
+    "surface-contrast": #0b1020,
+    "border": #e2e8f0,
+    "text": #0f172a,
+    "text-contrast": #ffffff,
+    "text-secondary": #475569,
+    "text-disabled": #94a3b8,
+    // All the colors defined in the default theme but not defined in the dark theme will be used in the dark theme 'as is'
+    "danger": #d93131,
+    "success": #21b621,
+    "warning": #f1cc14,
+    "info": #2760dc
+);
+$dark: (
+    "primary": #3a7bd5,
+    "secondary": #5aa2ff,
+    "accent": #f59e0b,
+    "background": #05070f,
+    "background-contrast": #e2e8f0,
+    "surface": #111827,
+    "surface-contrast": #e2e8f0,
+    "border": #1f2937,
+    "text": #e2e8f0,
+    "text-contrast": #0b1020,
+    "text-secondary": #cbd5f5,
+    "text-disabled": #94a3b8
+    // Override the default theme colors with the dark theme colors
+    // "danger": #ea3434,
+    // ...
+);
+
+// This can be used to set the default theme, or changed to a different theme with a custom class name
+:root {
+    // Declare a variable for each key in the map
+    @each $key, $value in $default {
+        --#{$key}: #{to_rgba($value, 1)};
+    }
+
+}
+
+.dark {
+    @each $key, $value in $dark {
+        --#{$key}: #{to_rgba($value, 1)};
+    }
+}

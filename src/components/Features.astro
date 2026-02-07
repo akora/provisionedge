@@ -1,0 +1,18 @@
+---
+import { markdownify } from "@/lib/utils/textConverter";
+import { Image } from "astro:assets";
+import HomepageFeature from "@/components/react/HomepageFeature";
+const { features } = Astro.props;
+const { title, feature_list } = features;
+---
+
+<section class="section key-feature relative">
+  <div class="container">
+    <div class="row justify-between text-center lg:text-start ">
+      <div class="lg:col-12">
+        <h1 set:html={markdownify(title)} />
+      </div>
+    </div>
+    <HomepageFeature feature_list={feature_list} client:load />
+  </div>
+</section>

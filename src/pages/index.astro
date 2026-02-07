@@ -1,0 +1,61 @@
+---
+import Section from "@/components/core/Section.astro";
+import Features from "@/components/Features.astro";
+import Offers from "@/components/Offers.astro";
+import Base from "@/layouts/Base.astro";
+import Cta from "@/layouts/partials/Cta.astro";
+import { getEntry } from "astro:content";
+
+const homepage = await getEntry("homepage", "index");
+// console.log(homepage);
+const { banner, sections, features, offers, post_offers_sections, tags } = homepage.data;
+const call_to_action = homepage.data.call_to_action;
+---
+
+<Base entry_keys={["homepage", "index"]}>
+  <!-- banner -->
+  <section class="lg:mb-10 animate-fade-in">
+    <Section section={banner} />
+  </section>
+  <!-- multi section -->
+  {
+    sections && (
+      <section class="multi-section">
+        {sections.map((section) => (
+          <Section section={section} />
+        ))}
+      </section>
+    )
+  }
+  <!-- key features -->
+  <Features features={features} />
+  <!-- offers -->
+  <Offers offers={offers} />
+  <!-- post-offers sections -->
+  {
+    post_offers_sections && (
+      <section class="multi-section">
+        {post_offers_sections.map((section) => (
+          <Section section={section} />
+        ))}
+      </section>
+    )
+  }
+  <!-- call to action -->
+  <Cta {...call_to_action} />
+  <!-- tags -->
+  {
+    tags?.list?.length && (
+      <section class="section pt-2">
+        <div class="container">
+          <div class="flex flex-wrap gap-2 justify-center">
+            {tags.list.map((tag) => (
+              <span class="badge dark text-lg">{tag}</span>
+            ))}
+          </div>
+        </div>
+      </section>
+    )
+  }
+  <!-- <Content /> -->
+</Base>

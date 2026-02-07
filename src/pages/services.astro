@@ -1,0 +1,21 @@
+---
+import PageHeader from "@/components/core/PageHeader.astro";
+import Base from "@/layouts/Base.astro";
+import { getEntry } from "astro:content";
+
+const services = await getEntry("services", "index");
+const { Content } = await services.render();
+---
+
+<Base
+  entry_keys={["services", "index"]}
+>
+  <section class="py-16">
+    <div class="container">
+      <PageHeader page_data={services.data} />
+    </div>
+    <div class="container">
+      <Content />
+    </div>
+  </section>
+</Base>

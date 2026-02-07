@@ -1,0 +1,15 @@
+{
+  "main": [
+    {
+      "name": "Home",
+      "url": "/"
+    }
+  ],
+
+  "footer": [
+    {
+      "name": "Home",
+      "url": "/"
+    }
+  ]
+}
