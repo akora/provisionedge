@@ -22,15 +22,13 @@ const { contact_form_action } = config.params;
         <div class="md:col-12 md:order-1 grid place-content-center">
           <form
             class="lg:max-w-[484px]"
-            method="POST"
             name="contact"
-            data-netlify="true"
-            data-netlify-honeypot="bot-field"
+            method="POST"
+            netlify
           >
-            <input type="hidden" name="form-name" value="contact" />
             <p class="hidden">
               <label>
-                Don’t fill this out if you’re human: <input name="bot-field" />
+                Don't fill this out if you're human: <input name="bot-field" />
               </label>
             </p>
             <div class="form-group mb-5">
