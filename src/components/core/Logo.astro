@@ -3,6 +3,7 @@ import config from "@/config/config.json";
 import { Image } from "astro:assets";
 const { src, showText } = Astro.props;
 const {
+  logo,
   logo_text,
   logo_width,
   logo_height,
@@ -16,14 +17,15 @@ const {
 } = config.site;
 
 const text = logo_text;
+const logoSrc = src || logo;
 ---
 
-<a href="/" class="navbar-brand flex flex-row items-center">
+<a href="/" class="navbar-brand flex flex-row items-center ml-0">
   {
-    src ? (
+    logoSrc ? (
       <Image
-        class="h-9 w-auto"
-        src={src}
+        class="h-16 w-auto mx-0"
+        src={logoSrc}
         alt={title}
         width={Number(logo_width)}
         height={Number(logo_height)}
@@ -32,7 +34,7 @@ const text = logo_text;
   }
 
   {
-    showText != false && (
+    showText === true && (
       <p class="text-text text-xl md:text-3xl font-bold ml-2">
         {text ? text : logo_text}
       </p>

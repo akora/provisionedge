@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xl="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="-15 -13 730 210" width="730" height="210">
+  <defs>
+    <filter id="Shadow" filterUnits="userSpaceOnUse" x="-88" y="-34">
+      <feGaussianBlur in="SourceAlpha" result="blur" stdDeviation="2.18"/>
+      <feOffset in="blur" result="offset" dx="0" dy="2"/>
+      <feFlood flood-color="black" flood-opacity=".5" result="flood"/>
+      <feComposite in="flood" in2="offset" operator="in" result="color"/>
+      <feMerge>
+        <feMergeNode in="color"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <g id="Canvas_1" stroke-opacity="1" stroke-dasharray="none" fill-opacity="1" stroke="none" fill="none">
+    <title>Canvas 1</title>
+    <g id="Canvas_1_Layer_1">
+      <title>Layer 1</title>
+      <g id="Graphic_8" filter="url(#Shadow)">
+        <text transform="translate(36.40625 36)" fill="#424242">
+          <tspan font-family="Sansation" font-size="96" fill="#424242" x="0" y="87" xml:space="preserve">ProvisionEdge</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>
