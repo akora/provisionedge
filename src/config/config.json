@@ -5,7 +5,7 @@
     "base_path": "/",
     "trailing_slash": false,
     "favicon": "/images/ProvisionEdge-favicon-iOS-Default-1024x1024@1x.png",
-    "logo": "/images/ProvisionEdge-logo.svg",
+    "logo": "/images/ProvisionEdge-logo.png",
     "logo_width": "60",
     "logo_height": "60",
     "logo_text": "ProvisionEdge"
