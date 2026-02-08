@@ -16,6 +16,26 @@
   @include meta.load-css("buttons");
 }
 
+// Explicit button color overrides since dynamic @apply doesn't work
+.btn-accent {
+  background-color: rgba(var(--accent));
+}
+.btn-secondary {
+  background-color: rgba(var(--secondary));
+}
+.btn-danger {
+  background-color: rgba(var(--danger));
+}
+.btn-success {
+  background-color: rgba(var(--success));
+}
+.btn-warning {
+  background-color: rgba(var(--warning));
+}
+.btn-info {
+  background-color: rgba(var(--info));
+}
+
 /**
  * Scrollbar styles
  */
