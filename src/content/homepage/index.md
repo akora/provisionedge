@@ -1,7 +1,7 @@
 ---
 # Does not contain meta customizations because it is the homepage and config is already set in the config file
 
-document_title: "ProvisionEdge - Building local-first, decentralized systems that ensure operational continuity, data integrity, and digital autonomy."
+document_title: "ProvisionEdge • Building local-first, decentralized systems that ensure operational continuity, data integrity, and digital autonomy."
 meta_title: "ProvisionEdge: Building local-first, decentralized systems that ensure operational continuity, data integrity, and digital autonomy."
 meta_description: "We help organizations reclaim control over their infrastructure, data, and digital operations with local-first, resilient architecture."
 meta_image: "/images/The-Local-First-Revolution-Data-with-a-Pulse_3e254a73-966e-4bbe-b787-8b8b948842c9.png"

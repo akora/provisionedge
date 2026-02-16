@@ -1,10 +1,10 @@
 {
   "site": {
-    "title": "ProvisionEdge",
+    "title": "ProvisionEdge • Building local-first, decentralized systems by Andras Kora",
     "base_url": "https://provisionedge.com",
     "base_path": "/",
     "trailing_slash": false,
-    "favicon": "/images/ProvisionEdge-favicon-iOS-Default-1024x1024@1x.png",
+    "favicon": "/favicon.svg",
     "logo": "/images/ProvisionEdge-logo.png",
     "logo_width": "60",
     "logo_height": "60",
